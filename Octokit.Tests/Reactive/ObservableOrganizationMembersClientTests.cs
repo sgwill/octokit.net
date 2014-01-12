@@ -1,6 +1,4 @@
 ﻿using NSubstitute;
-using Octokit;
-using Octokit.Internal;
 using Octokit.Reactive;
 using Octokit.Tests.Helpers;
 using System;
@@ -23,7 +21,7 @@ namespace Octokit.Tests.Reactive
 
                 client.GetAll("org");
 
-                gitHubClient.Connection.GetAsync<IReadOnlyList<User>>(
+                gitHubClient.Connection.Received(1).GetAsync<List<User>>(
                     new Uri("orgs/org/members", UriKind.Relative), null, null);
             }
 
@@ -47,7 +45,7 @@ namespace Octokit.Tests.Reactive
 
                 client.GetPublic("org");
 
-                gitHubClient.Connection.GetAsync<IReadOnlyList<User>>(
+                gitHubClient.Connection.Received().GetAsync<List<User>>(
                     new Uri("orgs/org/public_members", UriKind.Relative), null, null);
             }
 
