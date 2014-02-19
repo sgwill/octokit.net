@@ -81,6 +81,7 @@
     <Compile Include="Clients\IOrganizationsClient.cs" />
     <Compile Include="Clients\IReferencesClient.cs" />
     <Compile Include="Clients\IReleasesClient.cs" />
+    <Compile Include="Clients\IRepoCommitsClient.cs" />
     <Compile Include="Clients\IRepositoriesClient.cs" />
     <Compile Include="Clients\ISshKeysClient.cs" />
     <Compile Include="Clients\IssueCommentsClient.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Clients\OrganizationsClient.cs" />
     <Compile Include="Clients\ReferencesClient.cs" />
     <Compile Include="Clients\ReleasesClient.cs" />
+    <Compile Include="Clients\RepoCommitsClient.cs" />
     <Compile Include="Clients\RepositoriesClient.cs" />
     <Compile Include="Clients\SshKeysClient.cs" />
     <Compile Include="Clients\StarredClient.cs" />
@@ -204,6 +206,7 @@
     <Compile Include="Models\Response\CommitStatus.cs" />
     <Compile Include="Models\Response\Contributor.cs" />
     <Compile Include="Models\Response\EmailAddress.cs" />
+    <Compile Include="Models\Response\File.cs" />
     <Compile Include="Models\Response\Gist.cs" />
     <Compile Include="Models\Response\GistChangeStatus.cs" />
     <Compile Include="Models\Response\GistFile.cs" />
@@ -228,10 +231,12 @@
     <Compile Include="Models\Response\Release.cs" />
     <Compile Include="Models\Response\ReleaseAsset.cs" />
     <Compile Include="Models\Response\ReleaseAssetUpload.cs" />
+    <Compile Include="Models\Response\RepoCommit.cs" />
     <Compile Include="Models\Response\Repository.cs" />
     <Compile Include="Models\Response\Signature.cs" />
     <Compile Include="Models\Response\SshKey.cs" />
     <Compile Include="Models\Response\SshKeyInfo.cs" />
+    <Compile Include="Models\Response\Stats.cs" />
     <Compile Include="Models\Response\Subscription.cs" />
     <Compile Include="Models\Response\TagObject.cs" />
     <Compile Include="Models\Response\TreeItem.cs" />

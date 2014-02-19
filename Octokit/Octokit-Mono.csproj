@@ -60,6 +60,7 @@
     <Compile Include="Clients\IIssuesLabelsClient.cs" />
     <Compile Include="Clients\IOrganizationMembersClient.cs" />
     <Compile Include="Clients\IReferencesClient.cs" />
+    <Compile Include="Clients\IRepoCommitsClient.cs" />
     <Compile Include="Clients\IssueCommentsClient.cs" />
     <Compile Include="Clients\IssuesClient.cs" />
     <Compile Include="Clients\IssuesEventsClient.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Clients\MilestonesClient.cs" />
     <Compile Include="Clients\OrganizationMembersClient.cs" />
     <Compile Include="Clients\ReferencesClient.cs" />
+    <Compile Include="Clients\RepoCommitsClient.cs" />
     <Compile Include="Clients\StarredClient.cs" />
     <Compile Include="Clients\StatisticsClient.cs" />
     <Compile Include="Clients\TagsClient.cs" />
@@ -111,6 +113,7 @@
     <Compile Include="Models\Response\CommitStatus.cs" />
     <Compile Include="Models\Response\Contributor.cs" />
     <Compile Include="Models\Response\EventInfo.cs" />
+    <Compile Include="Models\Response\File.cs" />
     <Compile Include="Models\Response\Gist.cs" />
     <Compile Include="Models\Response\GistChangeStatus.cs" />
     <Compile Include="Models\Response\GistFile.cs" />
@@ -132,7 +135,9 @@
     <Compile Include="Models\Request\RepositoryIssueRequest.cs" />
     <Compile Include="Models\Request\MilestoneRequest.cs" />
     <Compile Include="Models\Response\Reference.cs" />
+    <Compile Include="Models\Response\RepoCommit.cs" />
     <Compile Include="Models\Response\Signature.cs" />
+    <Compile Include="Models\Response\Stats.cs" />
     <Compile Include="Models\Response\Subscription.cs" />
     <Compile Include="Models\Response\TagObject.cs" />
     <Compile Include="Models\Response\TreeItem.cs" />

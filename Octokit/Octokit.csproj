@@ -66,6 +66,10 @@
       <Link>Properties\SolutionInfo.cs</Link>
     </Compile>
     <Compile Include="Clients\ActivitiesClient.cs" />
+    <Compile Include="Clients\RepoCommitsClient.cs" />
+    <Compile Include="Clients\IRepoCommitsClient.cs" />
+    <Compile Include="Models\Response\File.cs" />
+    <Compile Include="Models\Response\Stats.cs" />
     <Compile Include="Models\Response\DeploymentStatus.cs" />
     <Compile Include="Clients\DeploymentStatusClient.cs" />
     <Compile Include="Clients\IDeploymentStatusClient.cs" />
@@ -134,6 +138,7 @@
     <Compile Include="Models\Response\PunchCard.cs" />
     <Compile Include="Models\Response\PunchCardPoint.cs" />
     <Compile Include="Models\Response\Reference.cs" />
+    <Compile Include="Models\Response\RepoCommit.cs" />
     <Compile Include="Models\Response\RepositoryLanguage.cs" />
     <Compile Include="Models\Response\RepositoryTag.cs" />
     <Compile Include="Models\Response\Subscription.cs" />

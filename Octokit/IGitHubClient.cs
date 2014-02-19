@@ -24,5 +24,6 @@ namespace Octokit
         ISearchClient Search { get; }
         IDeploymentsClient Deployment { get; }
         IStatisticsClient Statistics { get; }
+        IRepoCommitsClient RepoCommits { get; }
     }
 }

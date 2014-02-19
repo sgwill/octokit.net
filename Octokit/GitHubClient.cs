@@ -94,6 +94,7 @@ namespace Octokit
             Search = new SearchClient(apiConnection);
             Deployment = new DeploymentsClient(apiConnection);
             Statistics = new StatisticsClient(apiConnection);
+            RepoCommits = new RepoCommitsClient(apiConnection);
         }
 
         /// <summary>
@@ -145,6 +146,7 @@ namespace Octokit
         public ISearchClient Search { get; private set; }
         public IDeploymentsClient Deployment { get; private set; }
         public IStatisticsClient Statistics { get; private set; }
+        public IRepoCommitsClient RepoCommits { get; private set; }
 
         static Uri FixUpBaseUri(Uri uri)
         {
